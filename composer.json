@@ -1,0 +1,22 @@
+{
+    "name": "jmalko/constantcontact",
+    "autoload": {
+        "psr-4": {
+            "Jmalko\\Constantcontact\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Constantcontact",
+            "description": "Constantcontact addon"
+        },
+        "laravel": {
+            "providers": [
+                "Jmalko\\Constantcontact\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "phpfui/constantcontact": "^22.1"
+    }
+}
