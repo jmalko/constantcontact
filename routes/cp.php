@@ -8,6 +8,7 @@ Route::prefix('constantcontact')->group(function() {
 
     Route::get('/', function() {
         $client = Utils::makeClient();
+        dd($client);
         $account = Utils::fetchAccount($client) ?: [];
         return view('constantcontact::index', [
             'access_token' => $client->accessToken,
