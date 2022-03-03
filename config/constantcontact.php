@@ -16,6 +16,6 @@
 
 return [
     'api' => env('CONSTANT_CONTACT_V3_APIKEY') ?: "200469cb-15d7-4bb1-ac21-4d57492e6337",
-    'secret' => env('CONSTANT_CONTACT_V3_SECRET') ?: "FM1On8roDy7rrEQgZDwcug",
+    'secret' => env('CONSTANT_CONTACT_V3_SECRET') ?: "pTXwi0pHvW4tL4wUHAPxqw",
     'callback_url' => url('/cp/constantcontact/callback/')
 ];

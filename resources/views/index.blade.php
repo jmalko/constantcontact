@@ -9,7 +9,6 @@
         Please authenticate.
         <a href="/cp/constantcontact/auth">Sign in with Constant Contact</a>
     @else
-        You are signed in as {{ $account['contact_email']; }} with {{ $account['organization_name'] }}.
         <a href="/cp/constantcontact/logout" onclick="return confirm('If you logout, you will disable Constant Contact anywhere it is used on the site.  Are you sure?');">Log out of your account.</a>
     @endif
 

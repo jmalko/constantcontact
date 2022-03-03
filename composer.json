@@ -5,7 +5,7 @@
     "description": "Subscribe visitors to your Constant Contact newsletters.",
     "require": {
         "php": "^7.4 || ^8.0",
-        "phpfui/constantcontact": "^22.1",
+        "phpfui/constantcontact": "dev-main",
         "laravel/framework": "^7.30.3 || ^8.40",
         "statamic/cms": "^3.0"
     },

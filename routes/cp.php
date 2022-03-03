@@ -8,7 +8,6 @@ Route::prefix('constantcontact')->group(function() {
 
     Route::get('/', function() {
         $client = Utils::makeClient();
-        dd($client);
         $account = Utils::fetchAccount($client) ?: [];
         return view('constantcontact::index', [
             'access_token' => $client->accessToken,
@@ -31,7 +30,7 @@ Route::prefix('constantcontact')->group(function() {
 
     Route::get('/callback', function(Request $request) {
         $client = Utils::makeClient();
-        $client->acquireAccessToken($request->get('code'));
+        $client->acquireAccessToken($request->all());
         Utils::saveAccessToken($client);
         return redirect('/cp/constantcontact/');
     });
